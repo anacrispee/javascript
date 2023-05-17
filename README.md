@@ -1,1 +1,1 @@
-# Estudos com PHP
+# Estudos com JavaScript
