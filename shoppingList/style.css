@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+    url(shoppingListFundo.avif);
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+main {
+    background-color: #2A3950;
+    color: white;
+    border-radius: 5px;
+
+    padding: 20px;
+    margin: 20px;
+
+    width: 300px;
+    min-height: 400px;
+    max-height: fit-content;
+}
+h1 {
+    margin: 10px;
+    margin-bottom: 20px;
+    color: #FDD037;
+}
+label, input, button {
+    margin: 10px;
+    padding: 7px;
+}
+
+input {
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid #FDD037;
+    outline: none;
+}
+
+button {
+    font-weight: bold;
+    color: #2A3950;
+    background-color: #FDD037;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #ffdc66;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#deleteItemBtn {
+    font-size: smaller;
+    padding: 3px 5px;
+    color: #2A3950;
+    background-color: #FDD037;
+    border-radius: 5px;
+    border: none;
+}
+
+#deleteItemBtn:hover {
+    background-color: #ffdc66;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#modalBackdrop {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: none;
+}
+
+#modalEditaItem {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2A3950;
+    color: white;
+}
+
+#modalBackdrop.show {
+    display: block;
+}
