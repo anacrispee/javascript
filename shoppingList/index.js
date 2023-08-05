@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 let item = document.createElement('li');
                 item.textContent = this.inputNewItem.value;
+                this.inputNewItem.value = '';
 
                 const deleteItemBtn = document.createElement('button');
                 deleteItemBtn.id = 'deleteItemBtn';
