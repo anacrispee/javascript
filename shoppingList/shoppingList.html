@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Lista de compras</title>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+    <main>
+        <h1>Lista de compras</h1>
+        <section>
+            <label for="inputNewItem">Insira um novo item:</label><br>
+            <input id="inputNewItem" type="text" name="inputNewItem" placeholder="Insira aqui o nome do item"><br>
+            <button id="addItemBtn">Adicionar</button>
+            <article>
+                <ul>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <div id="modalBackdrop">
+        <div id="modalEditaItem">
+            <label for="nomeItemInput" name="nomeItemInput">Editar nome do item:</label>
+            <input id="nomeItemInput" type="text" name="nomeItemInput">
+            <button id="confirmaEditaBtn">Editar</button>
+            <button id="cancelaEdit">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
